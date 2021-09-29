@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_alignParentTop="true"
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="512dp"
+        android:src="@drawable/scanner"
+        android:layout_margin="30dp" />
+
+    <ScrollView
+        android:layout_above="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:id="@+id/idText"
+            android:layout_width= "match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:textColor="@color/white"/>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/idBtnCapture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Capture\nImage"
+            android:layout_marginRight="20dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/idBtnTextScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan\nImage"
+            android:textAllCaps="false"/>
+
+        <Button
+
+            android:id="@+id/idBtnTextCopy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copy\nText"
+            android:layout_marginLeft="20dp"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+</RelativeLayout>
